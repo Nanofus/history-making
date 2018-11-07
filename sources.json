@@ -1,4 +1,5 @@
 {
+    "chosenWordCount": 3,
     "eras": [
         {
             "year": "1900",
@@ -7,12 +8,20 @@
                 {
                     "keyword": "initial",
                     "text": [
-                        "initial lorem ipsum text"
+						"Seuraavat ovat katkelmia Gunnar Suolahden artikkelista \"Suomalaisen rococoajan kodeissa:",
+                        "Suomalainen rococo; rococo, keikailevainen, kevyt, sirouteensa sulava, hienouteensa kyllääntynyt rococo meidän karkeassa, kylmässä Suomessamme, meillä kömpelöillä, kehittymättömillä pohjanperien asukkailla - käsite kuuluu kummalta kuin oikukas kuvitelma tai tahallinen paradoksi. Ja kumminkin; sitä on yritetty, omalla tavallamme eletty ja loppuun saatettu.",
+						"Sisustus oli herraskodeissa sangen mukava ja kodikas, usein upea ja ylöllinenkin : tarkoittihan tämä aika enemmän mukavuutta ja elämäniloa kuin komeutta ja loistoa taikka ainakin oli aisi siihen suuntaan kehittymässä. Rococon kevyet, keikailevat kalustot olivat tunkemassa tieltänsä entisajan vakavia ja lujarakenteisia. Valitettavasti rajoittuvat lähteeni vain Etelä- ja Keski-Suomen pappiloihin sekä pariin professorikotiin;",
+						"Paraimmissa pappiloissa seinät ovat peitetyt kukallisilla liinakangasverhoilla, paikkapaikoin paperitapetitkin ovat käytäntöön päässeet; mutta köyhissä kappalaistaloissa olivat seinämät paljaat.",
+						"Hänen kolmesta sohvastaan on yksi itämainen \"ottomani\", tuollainen mukava muodikas kapine, jossa ei enää tarvitse suorana ja arvokkaana istua, vaan voi lepäillä puolittain lojuen;",
+						"Usein oli toimekkaalla emännällä koko kartanon taloushuolet kannettavanaan: niin oli maaherra Ramsayn rouvalla, niin oli myös piispatar Gezeliuksella ja vuorineuvoksetar af Forsellesilla. Tuollainen talonemäntä ei kysynyt vaivojansa."
                     ],
                     "derivativeKeywords": [
-                        "lorem",
-                        "ipsum",
-                        "dolor"
+                        "Gunnar Suolahti",
+                        "epäsuomalainen tyyli",
+                        "kevyitä muotoja, kukkakuoseja",
+						"varakkaiden tyyli",
+						"ulkoeurooppalaisia vaikutteita",
+						"naisilla tärkeä rooli"
                     ]
                 }
             ]
@@ -22,34 +31,63 @@
             "lectureImage": "era1luento.png",
             "sources": [
                 {
-                    "keyword": "lorem",
+                    "keyword": "Gunnar Suolahti",
                     "text": [
-                        "lorem ipsum dolor sit amet"
+                        "Lähteenä tätä tekstiä kirjoitettaessa on käytetty suomalaisen historiantutkija Gunnar Suolahden artikkelia, joka esittelee yleisesti rococoota Suomessa."
                     ],
                     "derivativeKeywords": [
-                        "ipsum",
-                        "dolor",
-                        "amet"
+                        "Gunnar Suolahti",
+                        "lähteiden merkitys"
                     ]
                 },
                 {
-                    "keyword": "ipsum",
+                    "keyword": "epäsuomalainen tyyli",
                     "text": [
-                        "cheddar mozzarella juustoja, dolor"
+                        "Rococoota voidaan pitää suomalaiselle kuttuurille epätyypillisenä tyylisuuntauksena. Suomalaisen itseymmärryksen mukaanhan kansakuntamme on koruton, vaatimaton ja vakava. Rococoo edustaa sen sijaan eräänlaista hilpeyttä, jonka on helpompaa kuvitella syntyneen ja kehittyneen aivan toisenlaisissa ympäristöllisissä olosuhteissa; auringossa ja vehreydessä."
                     ],
                     "derivativeKeywords": [
-                        "cheddar",
-                        "dolor"
+                        "epäsuomalainen tyyli",
+                        "ympäristön merkitys"
                     ]
                 },
                 {
-                    "keyword": "dolor",
+                    "keyword": "kevyitä muotoja, kukkakuoseja",
                     "text": [
-                        "cheddar mozzarella juustoja, dolor"
+                        "Rococoosta puhuttaessa on tärkeää kiinnittää huomiota sen varsinaiseen sisältöön, eli siihen, minkälainen tämä tyyli esteettisesti oli. Sen muotokieleen kuuluu keveys ja keikailevuus. Vanhaan verrattuna huonekalut tehtiin kevyemmiksi ja vähemmän jykeviksi. Kukalliset kuosit ja heleät pastellisävyt ovat tyylisuuntaukselle tyypillisiä."
                     ],
                     "derivativeKeywords": [
-                        "cheddar",
-                        "dolor"
+                        "kevyt muotokieli",
+                        "kukkakuosit"
+                    ]
+                },
+				{
+                    "keyword": "varakkaiden tyyli",
+                    "text": [
+						"Tyylisuuntauksista puhuttaessa on tärkeää pitää mielessä, kenen tyylistä oli viime kädessä kyse. Aineisto, jonka varaan rakennamme käsityksemme rococoosta rakentuu pitkälti ainoastaan varakkaampien kansankerrosten esineistöön ja kirjoituksiin. Rococoo onkin tärkeä osa nimenomaan hyväosaisten historiaa."
+                    ],
+                    "derivativeKeywords": [
+                        "eliitin historiaa",
+                        "osa äänistä jää kuulumatta"
+                    ]
+                },
+				{
+                    "keyword": "ulkoeurooppalaisia vaikutteita",
+                    "text": [
+						"Rococoo ei tietenkään ole tyylisuuntauksena mitenkään erityisen suomalainen, vaan kyseessä on hyvinkin yleiseurooppalainen ilmiö. Samat visuaaliset aiheet, teemat ja materiaalit olivat kovassa käytössä ympäri maanosaa. Rococoo sai kuitenkin vaikutteita myös Euroopan ulkopuolelta. Seuraava kuvaus kiinnittää huomiota rococoo-huonekalun turkkilaisperäiseen muotoon: \"Hänen kolmesta sohvastaan on yksi itämainen \"ottomani\", tuollainen mukava muodikas kapine, jossa ei enää tarvitse suorana ja arvokkaana istua, vaan voi lepäillä puolittain lojuen.\" Yllä olevasta loistaa kylläkin läpi myös asenne tähän vieraaseen kulttuuriin: Osmani-valtakunta kelpaa kyllä inspiraation lähteeksi, mutta samalla kyseistä kulttuuria tullaan määritellyksi vetelänä ja löysänä. Kyseinen suhtautuminen on hyvinkin tyypillistä sille, miten eurooppalaiset ovat tyyliään ja muotiaan muodostaneet."
+                    ],
+                    "derivativeKeywords": [
+                        "kansainvälistä kulttuuria",
+                        "kulttuurista omimista"
+                    ]
+                },
+				{
+                    "keyword": "naisilla tärkeä rooli",
+                    "text": [
+						"Naisten roolia rococoo-henkisten kotien ylläpitämisessä on vaikeaa korostaa liikaa. Seuraava lainaus kertoo tilanteesta paljon: \"Usein oli toimekkaalla emännällä koko kartanon taloushuolet kannettavanaan: niin oli maaherra Ramsayn rouvalla, niin oli myös piispatar Gezeliuksella ja vuorineuvoksetar af Forsellesilla. Tuollainen talonemäntä ei kysynyt vaivojansa.\" Yllä oleva lainaus kuvastaa rococoon hieman nurinkurista puolta: huolettomuuden ja vaivattomuuden tyylinä pidetty rococoo rasitti kodista vastaavia naisia siinä missä muutkin tyylit."
+                    ],
+                    "derivativeKeywords": [
+                        "naisten tärkeä rooli",
+                        "naisten alisteinen rooli"
                     ]
                 }
             ]

@@ -93,7 +93,7 @@ let drawTemplates = () => {
 
             // ERA SOURCE PAGE
             base.innerHTML += `
-            <div class="section" id="era-${index}-source" style="background-image: url('images/${era.lectureImage}'); background-size: cover;">
+            <div class="section" id="era-${index}-source">
                 <span class="timer"></span>
                 <p>INITIAL CONTENT</p>
             </div>
@@ -102,7 +102,7 @@ let drawTemplates = () => {
             // ERA CHOICE PAGE
             base.innerHTML += `
             <span class="timer"></span>
-            <div class="section" id="era-${index}-choices">
+            <div class="section" id="era-${index}-choices" style="background-image: url('images/${era.lectureImage}'); background-size: cover;">
                 <h2>Valitse ${chosenKeywords} avainsanaa</h2>
                 <div class="wordcloud"></div>
             </div>
