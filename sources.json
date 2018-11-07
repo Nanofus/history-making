@@ -1,0 +1,154 @@
+{
+    "eras": [
+        {
+            "year": "1900",
+            "lectureImage": "era1luento.png",
+            "sources": [
+                {
+                    "keyword": "initial",
+                    "text": [
+                        "initial lorem ipsum text"
+                    ],
+                    "derivativeKeywords": [
+                        "lorem",
+                        "ipsum",
+                        "dolor"
+                    ]
+                }
+            ]
+        },
+        {
+            "year": "1960",
+            "lectureImage": "era1luento.png",
+            "sources": [
+                {
+                    "keyword": "lorem",
+                    "text": [
+                        "lorem ipsum dolor sit amet"
+                    ],
+                    "derivativeKeywords": [
+                        "ipsum",
+                        "dolor",
+                        "amet"
+                    ]
+                },
+                {
+                    "keyword": "ipsum",
+                    "text": [
+                        "cheddar mozzarella juustoja, dolor"
+                    ],
+                    "derivativeKeywords": [
+                        "cheddar",
+                        "dolor"
+                    ]
+                },
+                {
+                    "keyword": "dolor",
+                    "text": [
+                        "cheddar mozzarella juustoja, dolor"
+                    ],
+                    "derivativeKeywords": [
+                        "cheddar",
+                        "dolor"
+                    ]
+                }
+            ]
+        },
+        {
+            "year": "2020",
+            "lectureImage": "era1luento.png",
+            "sources": [
+                {
+                    "keyword": "lorem",
+                    "text": [
+                        "lorem ipsum dolor sit amet"
+                    ],
+                    "derivativeKeywords": [
+                        "ipsum",
+                        "dolor",
+                        "amet"
+                    ]
+                },
+                {
+                    "keyword": "ipsum",
+                    "text": [
+                        "cheddar mozzarella juustoja, dolor"
+                    ],
+                    "derivativeKeywords": [
+                        "cheddar",
+                        "dolor"
+                    ]
+                },
+                {
+                    "keyword": "dolor",
+                    "text": [
+                        "cheddar mozzarella juustoja, dolor"
+                    ],
+                    "derivativeKeywords": [
+                        "cheddar",
+                        "dolor"
+                    ]
+                },
+                {
+                    "keywords": "amet",
+                    "text": [
+                        "amet amet amet cheddar"
+                    ],
+                    "derivativeKeywords": [
+                        "amet"
+                    ]
+                },
+                {
+                    "keywords": "cheddar",
+                    "text": [
+                        "amet amet amet cheddar"
+                    ],
+                    "derivativeKeywords": [
+                        "cheddar"
+                    ]
+                }
+            ]
+        },
+        {
+            "year": "final",
+            "lectureImage": "era1luento.png",
+            "sources": [
+                {
+                    "keyword": "lorem",
+                    "text": [
+                        "lorem ipsum dolor sit amet"
+                    ],
+                    "derivativeKeywords": []
+                },
+                {
+                    "keyword": "ipsum",
+                    "text": [
+                        "cheddar mozzarella juustoja, dolor"
+                    ],
+                    "derivativeKeywords": []
+                },
+                {
+                    "keyword": "dolor",
+                    "text": [
+                        "cheddar mozzarella juustoja, dolor"
+                    ],
+                    "derivativeKeywords": []
+                },
+                {
+                    "keywords": "amet",
+                    "text": [
+                        "amet amet amet cheddar"
+                    ],
+                    "derivativeKeywords": []
+                },
+                {
+                    "keywords": "cheddar",
+                    "text": [
+                        "amet amet amet cheddar"
+                    ],
+                    "derivativeKeywords": []
+                }
+            ]
+        }
+    ]
+}
