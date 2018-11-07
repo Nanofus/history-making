@@ -1,0 +1,21 @@
+{
+  "name": "history-making",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "fullpage.js": "^3.0.3",
+    "handlebars": "^4.0.12",
+    "howler": "^2.0.15"
+  },
+  "devDependencies": {
+    "sass": "^1.14.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nanofus/history-making.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nanofus/history-making/issues"
+  },
+  "homepage": "https://github.com/Nanofus/history-making#readme"
+}
