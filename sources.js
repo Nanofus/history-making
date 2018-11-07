@@ -1,4 +1,4 @@
-{
+let json = {
     "chosenWordCount": 3,
     "eras": [
         {
@@ -97,9 +97,9 @@
             "lectureImage": "era1luento.png",
             "sources": [
                 {
-                    "keyword": "lorem",
+                    "keyword": "Gunnar Suolahti",
                     "text": [
-                        "lorem ipsum dolor sit amet"
+                        "Lähteenä rococoosta ja elämästä tuon ajan Suomessa meille toimii historiantutkija Gunnar Suolahden artikkeli."
                     ],
                     "derivativeKeywords": [
                         "ipsum",
@@ -108,9 +108,9 @@
                     ]
                 },
                 {
-                    "keyword": "ipsum",
+                    "keyword": "lähteiden merkitys",
                     "text": [
-                        "cheddar mozzarella juustoja, dolor"
+                        "On olennaista kiinnittää huomiota siihen, millaisten tietojen varaan rakennamme väitteemme kyseessä olevasta ajasta. Erityisen kriittistä silmää on syytä käyttää, kun ei käytetä primäärilähteitä, vaan luotetaan toisen tutkijan tulkintaan lähdeaineistosta - joka ei sekään ole aikalaiskuvaus, vaan myöhempi tutkimus."
                     ],
                     "derivativeKeywords": [
                         "cheddar",
@@ -118,9 +118,9 @@
                     ]
                 },
                 {
-                    "keyword": "dolor",
+                    "keyword": "epäsuomalainen tyyli",
                     "text": [
-                        "cheddar mozzarella juustoja, dolor"
+                        "Suomalaiset ovat kansaa, joka on koruton, vaatimaton ja vakava. Kevyt ja hilpeä rococoo täällä kansamme parissa on siis suorastaan eräänlainen paradoksi."
                     ],
                     "derivativeKeywords": [
                         "cheddar",
@@ -128,18 +128,95 @@
                     ]
                 },
                 {
-                    "keywords": "amet",
+                    "keywords": "ympäristön merkitys",
                     "text": [
-                        "amet amet amet cheddar"
+                        "Jokainen tyyli, innovaatio ja ilmiö syntyy jossain kontekstissa, ja eräs kaikkein merkittävimmistä konteksteista on ympäristö. Esteettisten ilmeiden, kuten juuri rococoon, voidaan ajatella kuvastavan synnyin- ja kehittymisseutujensa miljöötä - tässä tapauksessa siis Ranskan leutoja maisemia sekä mielenmaisemia."
                     ],
                     "derivativeKeywords": [
                         "amet"
                     ]
                 },
-                {
-                    "keywords": "cheddar",
+				{
+                    "keyword": "kevyt muotokieli",
                     "text": [
-                        "amet amet amet cheddar"
+                        "Nimenomaan visuaalisena ilmeenä rococoo oli askel koukeroisesta eleganttiin ja raskaasta kevyeen. Edeltävien aikojen mahtailevaa koristeellisuutta ei siis pidetty enää tavoittelemisen arvoisena, vaan huoleton keveys tuli ihanteeksi. Miksi? Oliko tämä kenties uudenlainen keino leimautua osaksi eliittiä? Enää ei korostettu sitä kuinka paljon on, vaan kuinka tyylikästä on? Joka tapauksessa muoti kehittyi kevyeksi."
+                    ],
+                    "derivativeKeywords": [
+                        "ipsum",
+                        "dolor",
+                        "amet"
+                    ]
+                },
+				{
+                    "keyword": "kukkakuosit",
+                    "text": [
+                        "Rococoon aikaan verhoiluille ja tapetille oli ominaista olla väreiltään heleitä ja kuoseiltaan kukkaisia. Hennot luontoaiheet ja puutarhakuvaukset ihannoivat luontoa. Tämä tyylillinen suunta peilautuu mielenkiintoisella tavalla sitä edeltäneiden tyylien mahtipontisuuden ja symmetrisyyden ihanteisiin."
+                    ],
+                    "derivativeKeywords": [
+                        "ipsum",
+                        "dolor",
+                        "amet"
+                    ]
+                },
+				{
+                    "keyword": "eliitin historiaa",
+                    "text": [
+                        "Rococoo, sekä tutkittavissa oleva muoti yleisemminkin, kertoo mielenkiintoisella tavalla nimenomaan eliitin historiasta. Muoti, sisustus ja kuosit ovat olleet keinoja viestiä omaa valtaansa ja identifioitua tiettyyn ryhmään. Esteettisyys ja itseilmaisu ovat ihmisille olennaisia tarpeita, ja eliitillä on parhaat edellytykset niiden täyttämiseen."
+                    ],
+                    "derivativeKeywords": [
+                        "ipsum",
+                        "dolor",
+                        "amet"
+                    ]
+                },
+				{
+                    "keyword": "osa äänistä jää kuulumatta",
+                    "text": [
+                        "Mitä tulee ns. rococooajan suomalaiseen elämään, on syytä ottaa huomioon se, kenen näkökulma aiheeseen on meille pimennossa, eli kenen ääni ei kuulu. Tässä yhteydessä nimittäin suurimman osan: muoti ja tyyli ovat ylellisyysilmiöitä, jotka eivät juurikaan koskettaneet suurinta osaa tuon ajan ihmisistä."
+                    ],
+                    "derivativeKeywords": [
+                        "ipsum",
+                        "dolor",
+                        "amet"
+                    ]
+                },
+				{
+                    "keyword": "kansainvälistä kulttuuria",
+                    "text": [
+                        "Kulttuurisille ilmiöille, kuten tyylisuuntauksille, on ominaista olla paitsi kansainvälisiä, myös suoranaisen transnationaalisia. Niiden luonteeseen kuuluu kulkeutua valtioiden ja kulttuurien välillä - eikä rococoo ole tässä suhteessa mikään poikkeus. Ylirajaiset ilmiöt monipuolistavat kulttuureita lähtökohtaisesti useampaan suuntaan."
+                    ],
+                    "derivativeKeywords": [
+                        "ipsum",
+                        "dolor",
+                        "amet"
+                    ]
+                },
+				{
+                    "keyword": "kulttuurista omimista",
+                    "text": [
+                        "Rococoo, siinä missä muutkin kulttuuriset ilmiöt, ottavat vaikutteita rajojen yli. Rococoo on noussut valtavirtaan samoihin aikoihin kun eurooppalainen ylivalta ja kolonialistinen maailmanjärjestys alkoivat nostaa päätään. Näin ollen sen historian voidaan nähdä olevan osa tätä ongelmallista perintöä, jossa esimerkiksi rococoohon Osmanivaltakunnasta otetut vaikutteet voidaan tulkita toisen kulttuurin piirteiden omimiseksi."
+                    ],
+                    "derivativeKeywords": [
+                        "ipsum",
+                        "dolor",
+                        "amet"
+                    ]
+                },
+				{
+                    "keyword": "naisten tärkeä rooli",
+                    "text": [
+                        "Rococoo on ilmiö, josta ei voi puhua ottamatta huomioon naisten roolia. Kartanoiden arjessa naiset tekivät usein suuren osan merkittävistä päätöksistä ja kantoivat tärkeää taloudellista vastuuta, usein vastaten käytännössä koko kartanon taloudesta."
+                    ],
+                    "derivativeKeywords": [
+                        "ipsum",
+                        "dolor",
+                        "amet"
+                    ]
+                },
+                {
+                    "keywords": "naisten alisteinen rooli",
+                    "text": [
+                        "Yhteiskunta, jossa rococoo oli vallallaan, oli läpeensä patriarkaalinen. Naisten vastuuna saattoi hyvinkin olla koko kartanon taloudesta vastaaminen, mutta tätä vastuuta ei vastannut mikään vapaus. Tämän lisäksi emäntien odotettiin tekevän työnsä kiltisti, vaivojaan valittamatta."
                     ],
                     "derivativeKeywords": [
                         "cheddar"

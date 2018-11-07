@@ -10,4 +10,20 @@ body .section {
   background-color: #eddebb;
 }
 
+#read-timer {
+  position: absolute;
+  display: none;
+  z-index: 100;
+  top: 2rem;
+  right: 2rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: red;
+}
+
+.cloudword {
+  display: block;
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,17 +1,25 @@
 let eras = [];
-const request = async () => {
-    const response = await fetch('sources.json');
-    const json = await response.json();
-    console.log(json);
-    return json;
+for (let i = 0; i < json.eras.length; i++) {
+    eras.push(json.eras[i]);
 }
-request().then((json) => {
-    for (let i = 0; i < json.eras.length; i++) {
-        eras.push(json.eras[i]);
-    }
-    drawTemplates();
-    startFullPage();
-});
+
+// VARIABLES
+let requiredChosenKeywords = 3;
+let chosenKeywords = 0;
+let initialReadTimer = 40;
+let initialChooseTimer = 10;
+let timer = 0;
+let activeInterval = null;
+let lastStepChosenKeywords = ["initial"];
+
+let uniques = (kw) => kw.filter((v, i) => kw.indexOf(v) === i);
+
+let removeElement = (elementId) => {
+    // Removes an element from the document
+    var element = document.getElementById(elementId);
+    element.parentNode.removeChild(element);
+}
+
 let startFullPage = () => {
     new fullpage('#fullpage', {
         //options here
@@ -26,20 +34,29 @@ let startFullPage = () => {
     fullpage_api.setAllowScrolling(false, 'up');
 }
 
-// VARIABLES
-let chosenKeywords = 3;
-let lastStepChosenKeywords = ["initial"];
+let refreshFullPage = () => {
+    //remembering the active section / slide
+    var activeSectionIndex = $('.fp-section.active').index();
+    var activeSlideIndex = $('.fp-section.active').find('.slide.active').index();
+
+    fullpage_api.destroy('all');
+
+    //setting the active section as before
+    $('.section').eq(activeSectionIndex).addClass('active');
+
+    //were we in a slide? Adding the active state again
+    if (activeSlideIndex > -1) {
+        $('.section.active').find('.slide').eq(activeSlideIndex).addClass('active');
+    }
+
+    startFullPage();
+}
 
 // ADVANCE GAME PROCESS
 let advanceGame = (origin, destination, direction) => {
     console.log(origin, destination, direction);
-    console.log("advancing");
-    console.log("refreshing DOM")
     insertContent(destination);
-    console.log("DOM refreshed");
-    console.log("rebuilding");
     fullpage_api.reBuild();
-    console.log("rebuilt");
 }
 
 let insertContent = (destination) => {
@@ -48,9 +65,6 @@ let insertContent = (destination) => {
         let index = parseInt(elId.split("-")[1]);
         console.log(lastStepChosenKeywords);
         let base = document.getElementById(`era-${index}-source`)
-        base.innerHTML = `
-                <span class="timer"></span>
-            `;
         for (let source of eras[index].sources) {
             if (lastStepChosenKeywords.includes(source.keyword)) {
                 for (let paragraph of source.text) {
@@ -62,7 +76,86 @@ let insertContent = (destination) => {
                 }
             }
         }
+        fullpage_api.setAllowScrolling(false, 'down');
+        startReadTimer(index);
+    } else if (elId.includes("choice")) {
+        let index = parseInt(elId.split("-")[1]);
+        let base = document.getElementById(`era-${index}-choices`)
+        keywords = [];
+        console.log(keywords);
+        eras[index].sources.forEach(x => {
+            if (lastStepChosenKeywords.includes(x.keyword)) {
+                x.derivativeKeywords.forEach(y => {
+                    keywords.push(y);
+                });
+            }
+        });
+        console.log(keywords);
+        keywords = uniques(keywords);
+        console.log(keywords);
+        base.innerHTML = `
+            <h3>Valitse 3 avainsanaa</h3>
+            <div id="wordcloud"></div>
+            `;
+        for (let keyword of keywords) {
+            base.children[1].innerHTML += `<p class="cloudword">${keyword}</p>`
+        }
+        lastStepChosenKeywords = [];
+        chosenKeywords = 0;
+        Array.from(document.getElementsByClassName("cloudword")).forEach(x => {
+            x.addEventListener("click", () => {
+                if (!lastStepChosenKeywords.includes(x.innerHTML) && chosenKeywords < requiredChosenKeywords) {
+                    x.style.color = "red";
+                    chosenKeywords++;
+                    lastStepChosenKeywords.push(x.innerHTML);
+                }
+            });
+        });
+        fullpage_api.setAllowScrolling(false, 'down');
+        startChoiceTimer(index);
     }
+}
+
+let startReadTimer = (index) => {
+    timer = initialReadTimer;
+    document.getElementById("read-timer").style.display = "block";
+    document.getElementById("read-timer").innerHTML = timer;
+    activeInterval = setInterval(() => {
+        timer--;
+        document.getElementById("read-timer").innerHTML = timer;
+        if (timer == 0) {
+            clearInterval(activeInterval);
+            Array.from(document.getElementById(`era-${index}-source`).children).filter(x => {
+                if ([...x.classList].includes("slide")) {
+                    return true;
+                }
+                return false;
+            }).forEach(x => {
+                x.style.display = 'none';
+            })
+            document.getElementById("read-timer").style.display = "none";
+            fullpage_api.setAllowScrolling(true, 'down');
+        }
+    }, 1000);
+}
+
+let startChoiceTimer = (index) => {
+    timer = initialChooseTimer;
+    document.getElementById("read-timer").style.display = "block";
+    document.getElementById("read-timer").innerHTML = timer;
+    activeInterval = setInterval(() => {
+        timer--;
+        document.getElementById("read-timer").innerHTML = timer;
+        if (timer == 0) {
+            clearInterval(activeInterval);
+            document.getElementById("read-timer").style.display = "none";
+            document.getElementById("wordcloud").parentElement.children[0].style.display = "none";
+            removeElement("wordcloud");
+            lastStepChosenKeywords = uniques(lastStepChosenKeywords);
+            console.log(lastStepChosenKeywords);
+            fullpage_api.setAllowScrolling(true, 'down');
+        }
+    }, 1000);
 }
 
 // TEMPLATING
@@ -94,7 +187,6 @@ let drawTemplates = () => {
             // ERA SOURCE PAGE
             base.innerHTML += `
             <div class="section" id="era-${index}-source">
-                <p>INITIAL CONTENT</p>
             </div>
             `
 
@@ -102,8 +194,6 @@ let drawTemplates = () => {
             base.innerHTML += `
             <span class="timer"></span>
             <div class="section" id="era-${index}-choices" style="background-image: url('images/${era.lectureImage}'); background-size: cover;">
-                <h2>Valitse ${chosenKeywords} avainsanaa</h2>
-                <div class="wordcloud"></div>
             </div>
             `
 
@@ -124,9 +214,7 @@ let drawTemplates = () => {
             index++;
         }
     }
-
-    console.log("GENERATED");
-    if (typeof fullpage_api != "undefined") {
-        fullpage_api.reBuild();
-    }
 }
+
+drawTemplates();
+startFullPage();
