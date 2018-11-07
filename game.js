@@ -45,22 +45,22 @@ let advanceGame = (origin, destination, direction) => {
 let insertContent = (destination) => {
     let elId = destination.item.id;
     if (elId.includes("source")) {
+        let index = parseInt(elId.split("-")[1]);
         console.log(lastStepChosenKeywords);
-        index = 0;
-        for (let era of eras) {
-            let base = document.getElementById(`era-${index}-source`)
-            for (let source of era.sources) {
-                if (lastStepChosenKeywords.includes(source.keyword)) {
-                    for (let paragraph of source.text) {
-                        base.innerHTML += `    
-                <div class="slide">
-                    <p>${paragraph}</p>
-                </div>
-                `
-                    }
+        let base = document.getElementById(`era-${index}-source`)
+        base.innerHTML = `
+                <span class="timer"></span>
+            `;
+        for (let source of eras[index].sources) {
+            if (lastStepChosenKeywords.includes(source.keyword)) {
+                for (let paragraph of source.text) {
+                    base.innerHTML += `    
+                        <div class="slide">
+                            <p>${paragraph}</p>
+                        </div>
+                        `
                 }
             }
-            index++;
         }
     }
 }
@@ -94,7 +94,6 @@ let drawTemplates = () => {
             // ERA SOURCE PAGE
             base.innerHTML += `
             <div class="section" id="era-${index}-source">
-                <span class="timer"></span>
                 <p>INITIAL CONTENT</p>
             </div>
             `
