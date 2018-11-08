@@ -116,10 +116,11 @@ let insertContent = (destination) => {
         } else if (index == 2) {
             year3Music.play();
         }
+    } else if (elId.includes('end')) {
+        titleMusic.play();
     } else if (elId.includes("source")) {
         disableScrollPrompt();
         let index = parseInt(elId.split("-")[1]);
-        console.log(lastStepChosenKeywords);
         let base = document.getElementById(`era-${index}-source`);
         let string = `
         <div id="after-reading">
@@ -128,9 +129,12 @@ let insertContent = (destination) => {
             <p>Valitse kolme olennaisinta näkökulmaa. Sinulla on aikaa 10 sekuntia.</p>
         </div>
         <div id="scrollable">`;
+        console.log(lastStepChosenKeywords);
         for (let source of eras[index].sources) {
             if (lastStepChosenKeywords.includes(source.keyword)) {
+                console.log(source);
                 for (let paragraph of source.text) {
+                    console.log(paragraph);
                     string += `<p>${paragraph}</p>`
                 }
             }
@@ -221,11 +225,6 @@ let startReadTimer = (index) => {
     readingMusic.play();
     document.getElementById("read-timer").style.display = "block";
     document.getElementById("read-timer").innerHTML = timer;
-    if (enteredLastStage) {
-        document.getElementById("scrollable").style.backgroundImage = "url('images/lecture4.png')";
-        document.getElementById("scrollable").style.backgroundSize = "cover";
-        document.getElementById("scrollable").style.backgroundPositionX = "center";
-    }
     activeInterval = setInterval(() => {
         timer--;
         document.getElementById("read-timer").innerHTML = timer;
