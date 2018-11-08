@@ -32,7 +32,7 @@ var year2Music = new Howl({
     volume: 1
 });
 var year3Music = new Howl({
-    src: ['audio/Robottihaly.mp3', 'audio/Robottihaly.ogg'],
+    src: ['audio/Vuosi_3.mp3', 'audio/Vuosi_3.ogg'],
     volume: 1
 });
 var tapSound = new Howl({
@@ -41,6 +41,10 @@ var tapSound = new Howl({
 });
 var lectureSound = new Howl({
     src: ['audio/Yleisohaly.mp3', 'audio/Yleisohaly.ogg'],
+    volume: 1
+});
+var robotLectureSound = new Howl({
+    src: ['audio/Robottihaly.mp3', 'audio/Robottihaly.ogg'],
     volume: 1
 });
 
@@ -217,6 +221,11 @@ let startReadTimer = (index) => {
     readingMusic.play();
     document.getElementById("read-timer").style.display = "block";
     document.getElementById("read-timer").innerHTML = timer;
+    if (enteredLastStage) {
+        document.getElementById("scrollable").style.backgroundImage = "url('images/lecture4.png')";
+        document.getElementById("scrollable").style.backgroundSize = "cover";
+        document.getElementById("scrollable").style.backgroundPositionX = "center";
+    }
     activeInterval = setInterval(() => {
         timer--;
         document.getElementById("read-timer").innerHTML = timer;
@@ -245,7 +254,11 @@ let startReadTimer = (index) => {
 
 let startChoiceTimer = (index) => {
     timer = initialChooseTimer;
-    lectureSound.play();
+    if (index != 2) {
+        lectureSound.play();
+    } else {
+        robotLectureSound.play();
+    }
     document.getElementById("read-timer").style.display = "block";
     document.getElementById("read-timer").innerHTML = timer;
     activeInterval = setInterval(() => {
@@ -330,12 +343,14 @@ let drawTemplates = () => {
                 lastStage = true;
                 base.innerHTML += `
             <div class="section last" id="era-${index}-aliens">
-                <h3>Onneksi olkoon! Olette luoneet historiaa.</h3>
-                <p>(Kokoontukaa kaikki laitteen ääreen.)</p>
+                <h3>Viimeinen luento pidetty. Onneksi olkoon! Voitte nyt kerääntyä puhelimen äärelle.</h3>
+                <p>Tulitteko te tutkineeksi kulttuuria… vai ehkä luoneeksi sitä?</p>
+                <p>Teittekö historiankirjoitusta vaiko historiaa?</p>
             </div>
             <div class="section last" style="background-image: url('images/lecture4.png'); background-size: cover; background-position-x: center;">
-                <h3>Alienien alkusanat</h3>
-                <p></p>
+                <h3>Antropologinen tutkimuksemme tämän planeetan asukkaista on ollut mitä hedelmällisin.</h3>
+                <p>Perehdyttyämme heidän tutkielmaansa omasta historiastaan, olemme tehneet heistä kiintoisia havaintoja.</p>
+                <p>Krhm...</p>
             </div>
             `
             }

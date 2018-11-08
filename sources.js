@@ -43,7 +43,7 @@ let json = {
                 {
                     "keyword": "epäsuomalainen tyyli",
                     "text": [
-                        "rokokoota voidaan pitää suomalaiselle kuttuurille epätyypillisenä tyylisuuntauksena. Suomalaisen itseymmärryksen mukaanhan kansakuntamme on koruton, vaatimaton ja vakava. rokokoo edustaa sen sijaan eräänlaista hilpeyttä, jonka on helpompaa kuvitella syntyneen ja kehittyneen aivan toisenlaisissa ympäristöllisissä olosuhteissa; auringossa ja vehreydessä."
+                        "Rokokoota voidaan pitää suomalaiselle kuttuurille epätyypillisenä tyylisuuntauksena. Suomalaisen itseymmärryksen mukaanhan kansakuntamme on koruton, vaatimaton ja vakava. rokokoo edustaa sen sijaan eräänlaista hilpeyttä, jonka on helpompaa kuvitella syntyneen ja kehittyneen aivan toisenlaisissa ympäristöllisissä olosuhteissa; auringossa ja vehreydessä."
                     ],
                     "derivativeKeywords": [
                         "epäsuomalainen tyyli",
@@ -53,7 +53,7 @@ let json = {
                 {
                     "keyword": "kevyitä muotoja, kukkakuoseja",
                     "text": [
-                        "rokokoosta puhuttaessa on tärkeää kiinnittää huomiota sen varsinaiseen sisältöön, eli siihen, minkälainen tämä tyyli esteettisesti oli. Sen muotokieleen kuuluu keveys ja keikailevuus. Vanhaan verrattuna huonekalut tehtiin kevyemmiksi ja vähemmän jykeviksi. Kukalliset kuosit ja heleät pastellisävyt ovat tyylisuuntaukselle tyypillisiä."
+                        "Rokokoosta puhuttaessa on tärkeää kiinnittää huomiota sen varsinaiseen sisältöön, eli siihen, minkälainen tämä tyyli esteettisesti oli. Sen muotokieleen kuuluu keveys ja keikailevuus. Vanhaan verrattuna huonekalut tehtiin kevyemmiksi ja vähemmän jykeviksi. Kukalliset kuosit ja heleät pastellisävyt ovat tyylisuuntaukselle tyypillisiä."
                     ],
                     "derivativeKeywords": [
                         "kevyt muotokieli",
@@ -73,7 +73,7 @@ let json = {
 				{
                     "keyword": "ulkoeurooppalaisia vaikutteita",
                     "text": [
-						"rokokoo ei tietenkään ole tyylisuuntauksena mitenkään erityisen suomalainen, vaan kyseessä on hyvinkin yleiseurooppalainen ilmiö. Samat visuaaliset aiheet, teemat ja materiaalit olivat kovassa käytössä ympäri maanosaa. rokokoo sai kuitenkin vaikutteita myös Euroopan ulkopuolelta. Seuraava kuvaus kiinnittää huomiota rokokoo-huonekalun turkkilaisperäiseen muotoon: \"Hänen kolmesta sohvastaan on yksi itämainen \"ottomani\", tuollainen mukava muodikas kapine, jossa ei enää tarvitse suorana ja arvokkaana istua, vaan voi lepäillä puolittain lojuen.\" Yllä olevasta loistaa kylläkin läpi myös asenne tähän vieraaseen kulttuuriin: Osmani-valtakunta kelpaa kyllä inspiraation lähteeksi, mutta samalla kyseistä kulttuuria tullaan määritellyksi vetelänä ja löysänä. Kyseinen suhtautuminen on hyvinkin tyypillistä sille, miten eurooppalaiset ovat tyyliään ja muotiaan muodostaneet."
+						"Rokokoo ei tietenkään ole tyylisuuntauksena mitenkään erityisen suomalainen, vaan kyseessä on hyvinkin yleiseurooppalainen ilmiö. Samat visuaaliset aiheet, teemat ja materiaalit olivat kovassa käytössä ympäri maanosaa. Rokokoo sai kuitenkin vaikutteita myös Euroopan ulkopuolelta. Seuraava kuvaus kiinnittää huomiota rokokoo-huonekalun turkkilaisperäiseen muotoon: \"Hänen kolmesta sohvastaan on yksi itämainen \"ottomani\", tuollainen mukava muodikas kapine, jossa ei enää tarvitse suorana ja arvokkaana istua, vaan voi lepäillä puolittain lojuen.\" Yllä olevasta loistaa kylläkin läpi myös asenne tähän vieraaseen kulttuuriin: Osmani-valtakunta kelpaa kyllä inspiraation lähteeksi, mutta samalla kyseistä kulttuuria tullaan määritellyksi vetelänä ja löysänä. Kyseinen suhtautuminen on hyvinkin tyypillistä sille, miten eurooppalaiset ovat tyyliään ja muotiaan muodostaneet."
                     ],
                     "derivativeKeywords": [
                         "kansainvälistä kulttuuria",
@@ -104,7 +104,6 @@ let json = {
                     "derivativeKeywords": [
 						"Tuhansien vuosien takainen ilmiö",
                         "Jynnr Soolahti"
-                        
                     ]
                 },
                 {
@@ -224,37 +223,93 @@ let json = {
             "lectureImage": "lecture4.png",
             "sources": [
                 {
-                    "keyword": "lorem",
+                    "keyword": "Jynnr Soolahti",
                     "text": [
-                        "lorem ipsum dolor sit amet"
+                        "Tämä kiintoisa kulttuuri piti yksilöitä mitä korkeimmassa arvossa. Näistä yksilöistä olemme kuulleet tietäjästä nimeltä Jynnr Soolaht, jonka sanoja varjeltiin halki sukupolvien ja vuosituhansien."
                     ],
                     "derivativeKeywords": []
                 },
                 {
-                    "keyword": "ipsum",
+                    "keyword": "Hajanaiset lähteet",
                     "text": [
-                        "cheddar mozzarella juustoja, dolor"
+                        "Nämä ihmiset vaikuttavat olevan varovaisia sen suhteen, mitä he puhuvat menneisyydestään. He korostavat ja reflektoivat tietojensa sirpaleisuutta. Kiintoisaa!"
                     ],
                     "derivativeKeywords": []
                 },
                 {
-                    "keyword": "dolor",
+                    "keyword": "Suomalaisten henki",
                     "text": [
-                        "cheddar mozzarella juustoja, dolor"
+                        "Tämä ihmisten sivilisaatio jakautuu pienempiin kulttuuriryhmiin, joiden erityispiirteitä he mielellään korostavat. Yhtä näistä alaryhmistä kutsutaan suomaalaisiksi, ja tätä muinaista kansaa he kuvailevat vakavaksi ja kylmiin oloihin tottuneeksi."
                     ],
                     "derivativeKeywords": []
                 },
                 {
-                    "keywords": "amet",
+                    "keywords": "ympäristön merkitys",
                     "text": [
-                        "amet amet amet cheddar"
+                        "Ihmissiviliaation kotiplaneetta maapallo jakautuu erilaisiin luonnonympäristöihin. Eri ihmisryhmät vaikuttavat kehittyneen erilaisiksi sen perusteella, millaisia nämä luonnonolot ovat. Esimerkiksi jonkinlainen muoti nimeltään rock-OK on vaatinut lämpimän kasvualustan?"
+                    ],
+                    "derivativeKeywords": []
+                },
+				{
+                    "keywords": "arvoituksellinen keveys",
+                    "text": [
+                        "Eräs meille säilynyt ihmiskulttuurin osa on heidän suhtautumisensa mysteereihin: tiedämme heidän pitäneen muotisuuntausta nimeltään rock-OK arvoituksena. Tällä on luultavasti jotain tekemistä sen kanssa, että kevyt tyyli upposi raskasmielisiinkin - tai sitten ehkä kukkakuoseihin?"
+                    ],
+                    "derivativeKeywords": []
+                },
+				{
+                    "keywords": "Tyylit muuttuvat",
+                    "text": [
+                        "Maapallolaiset eivät pysy paikallaan, vaan heidän makunsa ja toimintatapansa muuttuvat. Tämän tiedämme esimerkiksi siitä, että he vaihtelivat tyylisuuntauksiaan vastakohdasta toiseen: salaperäinen muhkea tyyli, jonka nimi on kadonnut historiaan, vaihtui kepeään rock-OK'hon. Hullua! Mikä dynaaminen sivilisaatio."
+                    ],
+                    "derivativeKeywords": []
+                },
+				{
+                    "keywords": "Yläluokan historiaa",
+                    "text": [
+                        "Ihmiset vaikuttivat jakautuneen erilaisiin ryhmiin, eräänlaisiin luokkiin. Tämän tiedämme esimerkiksi siitä, että jotkut ihmiset pukeutuivat kukkakuosiin, mutta toiset eivät!"
+                    ],
+                    "derivativeKeywords": []
+                },
+				{
+                    "keywords": "Haastava tutkimuskohde",
+                    "text": [
+                        "Ihmiset taisivat olla sangen hyvin perillä siitä, että historia on haastava opinala. Tiedämme heidän korostaneen sitä, että osan heistä äänet hautautuvat historian huminaan. Heh heh, onneksi meillä on aikakoneita!"
+                    ],
+                    "derivativeKeywords": []
+                },
+				{
+                    "keywords": "Kansainvälisyys",
+                    "text": [
+                        "Eräs tavoista, joilla ihmiset jakoivat itseään, oli kuuluminen ns. kansoihin. Nämä kansat olivat kuitenkin yhteistyökykyisiä ja vaihtoivat asioita ja ajatuksia keskenään. Esimerkiksi muotisuuntaukset virtasivat kansoilta toisille, kuten rock-OK."
+                    ],
+                    "derivativeKeywords": []
+                },
+								{
+                    "keywords": "Piirteitä alisteisista kulttuureista",
+                    "text": [
+                        "Tutkimuksemme osoittaa, että ihmisyhteisöt eivät olleet keskenään tasa-arvoisia. Jotkut näistä ryhmistä ovat suorastaan alistaneet toisiaan! Meille on kuitenkin säilynyt aineistoa siitä, että ihmiset tunsivat myös empatiaa, ja saattoivat esimerkiksi vierastaa piirteitä, jotka olivat omaksuneet kaltoin kohtelemistaan kulttuureista."
+                    ],
+                    "derivativeKeywords": []
+                },
+								{
+                    "keywords": "Naisten tärkeä rooli",
+                    "text": [
+                        "Ihmiset jakautuivat ilmeisesti jonkinlaisiin sukupuolikategorioihin. Niiden tarkempi luonne on meille vielä toistaiseksi epäselvä, mutta naisiksi kutsutut ihmiset kantoivat ilmeisesti tärkeitä vastuita kartanoyhteisöissä."
+                    ],
+                    "derivativeKeywords": []
+                },
+								{
+                    "keywords": "Patriarkaalisuus",
+                    "text": [
+                        "Lähteidemme perusteella jopa samoihin yhteisöihin kuuluneiden ihmisten välillä oli valtakamppailua! Teksteissä puhutaan jonkinlaisista sukupuolittuneista ryhmistä, joilla oli toisiinsa nähden erilaisia valta-asetelmia. Ilmeisesti ihmiset kuitenkin kyseenalaistivat näitä rakenteita, ja taistelivat purkaakseen niitä."
                     ],
                     "derivativeKeywords": []
                 },
                 {
-                    "keywords": "cheddar",
+                    "keywords": "Tuhansien vuosien takainen ilmiö",
                     "text": [
-                        "amet amet amet cheddar"
+                        "Monet lonkeroissamme olevat aineistot ihmisistä käsittelevät aikakautta nimeltään rock-OK. Vaikuttaa kuitenkin siltä, että lähteemme eivät ole tuolta ajalta, vaan ainoastaan käsittelevät sitä aikaa. Ihmiset ilmeisesti miettivät tällaisia aikatasoja, ja kokivat yhtäältä vierautta, yhtäältä tuttuutta tuhansien vuosien takaisten lajitovereidensa kanssa. Ilmeisesti heidän kulttuurinsa oli kykenevä muuttumaan. Mielenkiintoista!"
                     ],
                     "derivativeKeywords": []
                 }
